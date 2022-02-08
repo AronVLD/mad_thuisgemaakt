@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mad_thuisgemaakt/main.dart';
 import 'package:mad_thuisgemaakt/page/Betaal.dart';
-import 'package:mad_thuisgemaakt/page/gerecht.dart';
-import 'package:mad_thuisgemaakt/page/gerecht2.dart';
-import 'package:mad_thuisgemaakt/page/gerecht3.dart';
-import 'package:mad_thuisgemaakt/page/gerecht4.dart';
 
-class Gerechten extends StatelessWidget {
+class Gerecht2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,63 +40,45 @@ class Gerechten extends StatelessWidget {
               ),
               Container(
                 child: Text(
-                  'Gerechten voor vandaag',
+                  'Stamppot',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
               ),
               Container(
                 alignment: Alignment.center,
                 margin: EdgeInsets.only(left: 20),
-                  padding: EdgeInsets.only(left: 15, right: 25),
-                  child: Row(
-                    children: [
-                    GestureDetector(
-                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Gerecht())),
-                      child: Card(
-                        child: Image(
-                          image: AssetImage("eten1.jpg"),
-                          width: 150,
-                          height: 150,
-                        ),
-                      ),
-                    ),
-                    GestureDetector(
-                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Gerecht2())),
-                      child: Card(
-                        child: Image(
-                          image: AssetImage("stamppot.jpg"),
-                          width: 150,
-                          height: 150,
-                        ),
-                      ),
-                    ),
-                    ],
-                  ),
-              ),
-              Container(
-                alignment: Alignment.center,
-                margin: EdgeInsets.only(left: 20),
-                padding: EdgeInsets.only(left: 15, right: 25),
+                padding: EdgeInsets.only(left: 10, right: 10),
                 child: Row(
                   children: [
                     GestureDetector(
-                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Gerecht3())),
                       child: Card(
-                        child: Image(
-                          image: AssetImage("assets/paella.jpg"),
-                          width: 150,
-                          height: 150,
+                        child: Text(
+                            'Ingredienten:\n100 g spekjes, in blokjes\n400 g kruimige aardappel\n100 ml melk\n20 g roomboter\n300 g verse andijvie\nsnufje nootmuskaat'
                         ),
                       ),
                     ),
                     GestureDetector(
-                      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Gerecht4())),
                       child: Card(
                         child: Image(
-                          image: AssetImage("assets/eten2.jpg"),
-                          width: 150,
-                          height: 150,
+                          image: AssetImage("stamppot.jpg"),
+                          width: 175,
+                          height: 175,
                         ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(border: Border.all()),
+                alignment: Alignment.center,
+                margin: EdgeInsets.only(left: 20),
+                child: Row(
+                  children: [
+                    Card(
+                      child: Text(
+                        'Doe alle ingrediënten voor de marinade in een kom.\nVoeg de kip in blokjes toe.\nDek af met folie en laat 1 uur marineren in de koelkast.\nKook de rijst gaar.\nSnipper de ui.\nVerhit een pan en voeg de ui aan toe met een beetje olie.\nVoeg de kip hier aan toe inclusief de marinade.\nVerwarm dit tot de kip gaar is, dit duurt ca 20 tot 25 minuten.\nOmdat je de kip verwarmt in de saus blijft deze lekker mals.\nServeer de kip tandoori met de rijsten naanbrood.\ntip: Ook lekker met een frisse salade.',
+                        style: TextStyle(fontSize: 12),
                       ),
                     ),
                   ],

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mad_thuisgemaakt/main.dart';
 import 'package:mad_thuisgemaakt/page/Betaal.dart';
 
-class Gerecht extends StatelessWidget {
+class Gerecht4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,7 +41,7 @@ class Gerecht extends StatelessWidget {
                 ),
                 Container(
                   child: Text(
-                    'Kip Tandoori',
+                    'Spaghetti',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -54,14 +54,14 @@ class Gerecht extends StatelessWidget {
                       GestureDetector(
                         child: Card(
                           child: Text(
-                            'Ingredienten:\n500 gr kip\n1 ui\n350 gr rijst\nnaanbrood\nOptioneel: verse koriander'
+                              'Ingredienten:\n350 gram spaghetti\n500 gram cherrytomaatjes\n250 gram mozzarella\n4 eetlepels olijfolie\n2 teentjes knoflook\n10 blaadjes basilicum'
                           ),
                         ),
                       ),
                       GestureDetector(
                         child: Card(
                           child: Image(
-                            image: AssetImage("eten1.jpg"),
+                            image: AssetImage("eten2.jpg"),
                             width: 170,
                             height: 170,
                           ),
@@ -78,8 +78,8 @@ class Gerecht extends StatelessWidget {
                     children: [
                       Card(
                         child: Text(
-                          'Doe alle ingrediënten voor de marinade in een kom.\nVoeg de kip in blokjes toe.\nDek af met folie en laat 1 uur marineren in de koelkast.\nKook de rijst gaar.\nSnipper de ui.\nVerhit een pan en voeg de ui aan toe met een beetje olie.\nVoeg de kip hier aan toe inclusief de marinade.\nVerwarm dit tot de kip gaar is, dit duurt ca 20 tot 25 minuten.\nOmdat je de kip verwarmt in de saus blijft deze lekker mals.\nServeer de kip tandoori met de rijsten naanbrood.\ntip: Ook lekker met een frisse salade.',
-                        style: TextStyle(fontSize: 12),
+                          'Kook de spaghetti gaar volgens de aanwijzingen op de\nverpakking in ruim water met zout.\nMeng intussen de tomaatjes met de mozzarella, olijfolie, knoflook\nen basilicum.\nGiet de pasta af en roer het tomatenmengsel erdoor.\nBestrooi met peper en serveer direct',
+                          style: TextStyle(fontSize: 12),
                         ),
                       ),
                     ],

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mad_thuisgemaakt/main.dart';
 import 'package:mad_thuisgemaakt/page/Betaal.dart';
 import 'package:mad_thuisgemaakt/page/gerecht.dart';
+import 'package:mad_thuisgemaakt/page/gerecht2.dart';
 
 
 class Favorieten extends StatelessWidget {
@@ -57,10 +58,10 @@ class Favorieten extends StatelessWidget {
                 ),
               ),
               GestureDetector(
-                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Gerecht())),
+                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => Gerecht2())),
                 child: Card(
                   child: Image(
-                    image: AssetImage("eten1.jpg"),
+                    image: AssetImage("stamppot.jpg"),
                     width: 150,
                     height: 150,
                   ),
